@@ -1,5 +1,5 @@
 package ad.billy.model;
 
-public class Tercers {
+public class Empresa {
 
 }
