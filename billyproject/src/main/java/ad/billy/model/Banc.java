@@ -24,8 +24,8 @@ public class Banc {
 	private String swift;
 
 	
-	@OneToMany(mappedBy="banc", cascade=CascadeType.ALL, fetch = FetchType.EAGER)
-	private List<Sucursal> sucursalList;
+//	@OneToMany(mappedBy="banc", cascade=CascadeType.ALL, fetch = FetchType.EAGER)
+//	private List<Sucursal> sucursalList;
 
 	/**
 	 * @return the id
@@ -69,22 +69,22 @@ public class Banc {
 		this.swift = swift;
 	}
 
-
-
-	/**
-	 * @return the sucursalList
-	 */
-	public List<Sucursal> getSucursalList() {
-		return sucursalList;
-	}
-
-	/**
-	 * @param sucursalList the sucursalList to set
-	 */
-	public void setSucursalList(List<Sucursal> sucursalList) {
-		this.sucursalList = sucursalList;
-	}
-	
+//
+//
+//	/**
+//	 * @return the sucursalList
+//	 */
+//	public List<Sucursal> getSucursalList() {
+//		return sucursalList;
+//	}
+//
+//	/**
+//	 * @param sucursalList the sucursalList to set
+//	 */
+//	public void setSucursalList(List<Sucursal> sucursalList) {
+//		this.sucursalList = sucursalList;
+//	}
+//	
 	
 
 }
