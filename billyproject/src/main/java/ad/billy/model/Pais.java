@@ -8,20 +8,16 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 
 @Entity
 public class Pais {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	
 	private Long id;
 	private String nom;
 	private String codi;
 	
-	@OneToMany(mappedBy="pais", cascade=CascadeType.ALL, fetch = FetchType.EAGER)
-	private List<Parroquia> parroquiaList;
 
 	/**
 	 * @return the id
@@ -65,22 +61,4 @@ public class Pais {
 		this.codi = codi;
 	}
 
-	/**
-	 * @return the parroquiaList
-	 */
-	public List<Parroquia> getParroquiaList() {
-		return parroquiaList;
-	}
-
-	/**
-	 * @param parroquiaList the parroquiaList to set
-	 */
-	public void setParroquiaList(List<Parroquia> parroquiaList) {
-		this.parroquiaList = parroquiaList;
-	}
-	
-	
-	
-	
-	
 }

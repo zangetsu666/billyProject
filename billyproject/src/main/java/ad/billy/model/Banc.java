@@ -11,7 +11,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.OneToMany;
 
-import org.springframework.data.annotation.Id;
+import javax.persistence.Id;
 
 @Entity
 public class Banc {
@@ -22,7 +22,7 @@ public class Banc {
 	private Long id;
 	private String nom;
 	private String swift;
-	private Pais pais;
+
 	
 	@OneToMany(mappedBy="banc", cascade=CascadeType.ALL, fetch = FetchType.EAGER)
 	private List<Sucursal> sucursalList;
@@ -69,19 +69,7 @@ public class Banc {
 		this.swift = swift;
 	}
 
-	/**
-	 * @return the pais
-	 */
-	public Pais getPais() {
-		return pais;
-	}
 
-	/**
-	 * @param pais the pais to set
-	 */
-	public void setPais(Pais pais) {
-		this.pais = pais;
-	}
 
 	/**
 	 * @return the sucursalList

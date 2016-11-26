@@ -19,10 +19,10 @@ public class Sucursal {
 	private String codi;
 	private String direccio;
 	
-	@ManyToOne
-	private Banc banc;
+//	@ManyToOne
+//	private Banc banc;
+//	
 	
-	private Parroquia parroquia;
 
 	/**
 	 * @return the id
@@ -66,38 +66,20 @@ public class Sucursal {
 		this.direccio = direccio;
 	}
 
-	/**
-	 * @return the banc
-	 */
-	public Banc getBanc() {
-		return banc;
-	}
+//	/**
+//	 * @return the banc
+//	 */
+//	public Banc getBanc() {
+//		return banc;
+//	}
+//
+//	/**
+//	 * @param banc the banc to set
+//	 */
+//	public void setBanc(Banc banc) {
+//		this.banc = banc;
+//	}
 
-	/**
-	 * @param banc the banc to set
-	 */
-	public void setBanc(Banc banc) {
-		this.banc = banc;
-	}
-
-	/**
-	 * @return the parroquia
-	 */
-	public Parroquia getParroquia() {
-		return parroquia;
-	}
-
-	/**
-	 * @param parroquia the parroquia to set
-	 */
-	public void setParroquia(Parroquia parroquia) {
-		this.parroquia = parroquia;
-	}
-	
-	
-	
-	
-	
 	
 
 }

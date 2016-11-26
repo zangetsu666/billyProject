@@ -4,34 +4,34 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
-import org.springframework.data.annotation.Id;
-
+import javax.persistence.Id;
 
 
 @Entity
 public class Person {
+
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-
-	private long id;
+	private Long id;
+	
 	private String nom;
 	private String cognom;
 	private Date dataNaixement;
 	private String direccio;
 	private String telefonFixe;
 	private String telefonMovil;
-	private Parroquia parroquia;
+	
 	private String email;
 	/**
 	 * @return the id
 	 */
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 	/**
 	 * @param id the id to set
 	 */
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	/**
@@ -106,18 +106,7 @@ public class Person {
 	public void setTelefonMovil(String telefonMovil) {
 		this.telefonMovil = telefonMovil;
 	}
-	/**
-	 * @return the parroquia
-	 */
-	public Parroquia getParroquia() {
-		return parroquia;
-	}
-	/**
-	 * @param parroquia the parroquia to set
-	 */
-	public void setParroquia(Parroquia parroquia) {
-		this.parroquia = parroquia;
-	}
+
 	/**
 	 * @return the email
 	 */
