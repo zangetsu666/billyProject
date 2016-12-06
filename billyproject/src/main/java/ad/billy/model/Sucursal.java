@@ -10,7 +10,7 @@ import javax.persistence.ManyToOne;
 
 
 
-@Entity
+//@Entity
 public class Sucursal {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)

@@ -5,9 +5,9 @@ import org.springframework.stereotype.Repository;
 import ad.billy.model.Persona;
 
 
-@Repository
-public interface PersonaDao extends CrudRepository<Persona, Long>{
-	
-
-	
-}
+////@Repository
+//public interface PersonaDao extends CrudRepository<Persona, Long>{
+//	
+//
+//	
+//}
